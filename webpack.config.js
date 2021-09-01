@@ -10,7 +10,7 @@ module.exports = {
     }),
   ],
   devServer: {
-		    static: './dist',
+    static: './dist',
   },
   output: {
     filename: 'main.js',
@@ -19,11 +19,11 @@ module.exports = {
     publicPath: '/',
   },
   module: {
-		    rules: [
-	      {
-		        test: /\.css$/i,
-		        use: ['style-loader', 'css-loader'],
-		      },
-		    ],
-		  },
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
 };

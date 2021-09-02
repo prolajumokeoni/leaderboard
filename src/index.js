@@ -57,3 +57,7 @@ submitButton.addEventListener("click", async (e) => {
 });
 
 
+refreshButton.addEventListener("click", (e) => {
+  scoreList.innerHTML = "";
+  displayList();
+});

@@ -7,7 +7,7 @@ const submitButton = document.getElementById('submitButton');
 const refreshButton = document.getElementById('refreshButton');
 
 let scores = [];
-const apikey = 'jkEzbR6fNifTU9BFqJSn';
+const apikey = 'AKAJVPw0U06VBfFrk32s';
 const displayList = async () => {
   const response = await fetch(
     `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${apikey}/scores/`,
@@ -30,7 +30,7 @@ const displayList = async () => {
       scoreList.appendChild(li);
     });
   }
-}
+};
 
 displayList();
 

@@ -14,65 +14,24 @@
 					<div class="col-5">
 						<div class="d-flex justify-content-between">
 								<h3>Recent scores</h3>
-								<button type="submit" class="btn btn-outline-dark btn-sm">Refresh</button>
+								<button type="submit" id="refreshButton" class="btn btn-outline-dark btn-sm">Refresh</button>
 						</div>
-						<div class="list-group pt-2">
-							<a href="#" class="list-group-item list-group-item-action"
-								>Name: 100</a
-							>
-							<a
-								href="#"
-								class="
-									list-group-item list-group-item-action list-group-item-dark
-								"
-								>Name: 20</a
-							>
-							<a
-								href="#"
-								class="
-									list-group-item list-group-item-action list-group-item-light
-								"
-								>Name: 50</a
-							>
-							<a
-								href="#"
-								class="
-									list-group-item list-group-item-action list-group-item-dark
-								"
-								>Name: 78</a
-							>
-							<a href="#" class="list-group-item list-group-item-action"
-								>Name: 125</a
-							>
-							<a
-								href="#"
-								class="
-									list-group-item list-group-item-action list-group-item-dark
-								"
-								>Name: 77</a
-							>
-							<a
-								href="#"
-								class="
-									list-group-item list-group-item-action list-group-item-light
-								"
-								>Name: 42</a
-							>
-						</div>
+						<ul class="list-group pt-2" id="scorelist">
+						</ul>
 					</div>
         <div class="col-5 text-right">
           <form>
 						<h3>Add your score</h3>
             <div>
-              <input type="text" placeholder="Your name" />
+              <input id="user" type="text" placeholder="Your name" />
             </div>
             <br/>
             <div>
-              <input type="text" placeholder="Your score" />
+              <input id="score"  type="number" placeholder="Your score" />
             </div>
             <br/>
 						<div >
-              <button type="submit" class="btn btn-outline-dark btn-sm">Refresh</button>
+              <button id="submitButton" type="submit" class="btn btn-outline-dark btn-sm">Add</button>
 						</div>
 						</form>
         </div>

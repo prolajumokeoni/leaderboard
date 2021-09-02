@@ -8,7 +8,7 @@ const refreshButton = document.getElementById('refreshButton');
 
 let scores = [];
 const apikey = 'jkEzbR6fNifTU9BFqJSn';
-async function displayList() {
+const displayList = async () => {
   const response = await fetch(
     `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${apikey}/scores/`,
   );

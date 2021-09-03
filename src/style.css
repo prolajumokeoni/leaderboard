@@ -1,4 +1,81 @@
 .content {
-  width: 70%;
+  width: 85%;
+  margin: 50px auto;
+  background-color: #8b3d88;
+  border: 3px solid #8b3d88;
+  border-radius: 20px;
+  height: 800px;
+}
+
+h1 {
+  color: #8b3d88;
+  background-color: #e5a9c9;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
   margin: 0 auto;
+  border-radius: 10px;
+}
+
+h4 {
+  width: 63%;
+  margin: 0 auto;
+  background-color: #8b3d88;
+  color: #e5a9c9;
+  border-radius: 10px;
+}
+
+.refresh-btn {
+  background-color: #e5a9c9;
+  color: #8b3d88;
+}
+
+.add-btn {
+  color: #e5a9c9;
+  background-color: #8b3d88;
+}
+
+.board {
+  background-color: #e5a9c9;
+  padding: 50px 10px;
+  border: 3px solid #8b3d88;
+  border-radius: 10px;
+}
+
+.list-group-item {
+  background-color: #faf4f7;
+}
+
+.pink-bg {
+  background-color: #8b3d88;
+  padding: 5px;
+  border-radius: 10px;
+  color: #e5a9c9;
+}
+
+.text {
+  color: #e5a9c9;
+  background-color: #e5a9c9;
+}
+
+.bg-text {
+  background-color: #e5a9c9;
+  margin: 0 auto;
+  text-align: center;
+  width: 70%;
+  border: 3px solid #8b3d88;
+  border-radius: 10px;
+  height: 350px;
+}
+
+input {
+  padding: 6px 10px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 1px solid #8b3d88;
+  border-radius: 3px;
+}
+
+ul > li:nth-child(2n + 2) {
+  background-color: #8b3d88;
 }

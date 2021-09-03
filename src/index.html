@@ -2,38 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <title>Leaderboard</title>
   </head>
   <body>
     <div class="content">
-      <h1>Leaderboard</h1>
-      	<div class="row justify-content-around pt-2">
-					<div class="col-5">
-						<div class="d-flex justify-content-between">
-								<h3>Recent scores</h3>
-								<button type="submit" id="refreshButton" class="btn btn-outline-dark btn-sm">Refresh</button>
-						</div>
-						<ul class="list-group pt-2" id="scorelist">
-						</ul>
-					</div>
+      <h1 class="pl-4 mt-5">Leaderboard <i class="fas fa-trophy"></i></h1>
+      <div class="row justify-content-around pt-2">
+        <div class="col-5 board">
+          <div class="d-flex justify-content-between pink-bg">
+            <h3>Recent scores</h3>
+            <button
+              type="submit"
+              id="refreshButton"
+              class="btn btn-outline-light refresh-btn"
+            >
+              Refresh <i class="fas fa-sync"></i>
+            </button>
+          </div>
+          <ul class="list-group pt-2 text" id="scorelist"></ul>
+        </div>
         <div class="col-5 text-right">
-          <form>
-						<h3>Add your score</h3>
+          <form class="bg-text">
+            <h4 class="mt-5 p-2">Add your score</h4>
+            <br />
             <div>
               <input id="user" type="text" placeholder="Your name" />
             </div>
-            <br/>
+            <br />
             <div>
-              <input id="score"  type="number" placeholder="Your score" />
+              <input id="score" type="number" placeholder="Your score" />
             </div>
-            <br/>
-						<div >
-              <button id="submitButton" type="submit" class="btn btn-outline-dark btn-sm">Add</button>
-						</div>
-						</form>
+            <br />
+            <div>
+              <button
+                id="submitButton"
+                type="submit"
+                class="btn btn-outline-light btn-sm add-btn"
+              >
+                Add <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

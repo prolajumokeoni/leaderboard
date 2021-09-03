@@ -40,6 +40,10 @@ h4 {
   border-radius: 10px;
 }
 
+.list-group-item {
+  background-color: #faf4f7;
+}
+
 .pink-bg {
   background-color: #8B3D88;
   padding: 5px;
@@ -59,7 +63,7 @@ h4 {
   width: 70%;
   border: 3px solid #8B3D88;
   border-radius: 10px;
-  height: 300px;
+  height: 350px;
 }
 
 input {
